@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+header {
+  background: #293241;
+  color: #fff;
+  padding: 1rem 0;
+}
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(41, 50, 65, 0.03);
+}
+.projects-list {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+.projects-list li {
+  margin-bottom: 0.75em;
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #293241;
+  color: #fff;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  section {
+    padding: 0.8rem;
+  }
+  nav ul li {
+    margin: 0 0.5em;
+  }
+}
