@@ -8,53 +8,77 @@
 </head>
 <body>
   <header>
-    <h1>Anuj Jadhav</h1>
+    <h1 class="fade-in">Anuj Jadhav</h1>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <section id="home" class="hero">
-    <h2>Welcome to My Portfolio!</h2>
-    <p>Hi, I'm Anuj Jadhav, a passionate developer skilled in Python, Web development, and Bot creation.</p>
-  </section>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a developer with practical experience building web apps, automation scripts, and bots. I enjoy learning new technologies and solving real-world problems through code.</p>
-    <ul>
-      <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
-      <li><strong>Technologies:</strong> React, Node.js, MongoDB, Flask</li>
-    </ul>
-  </section>
-  <section id="projects">
-    <h2>My Projects</h2>
-    <ul class="projects-list">
-      <li>
-        <strong>QR Code Generator</strong> — Python app to generate QR codes. <a href="https://github.com/Anuj230977/qr-code-generator" target="_blank">Repo</a>
-      </li>
-      <li>
-        <strong>Campus Placement Portal</strong> — Full stack platform for campus recruitment. <a href="https://github.com/Anuj230977/campus-placement-portal" target="_blank">Repo</a>
-      </li>
-      <li>
-        <strong>Telegram Bots</strong> — Custom Telegram bots hosted on Replit/Render. <a href="https://github.com/Anuj230977/telegram-bot-replit" target="_blank">Repo</a>
-      </li>
-      <li>
-        <strong>MediBridge</strong> — Appointment booking web app with SMS notifications. <a href="https://github.com/Anuj230977/medibridge" target="_blank">Repo</a>
-      </li>
-    </ul>
-  </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:anuj1230567@gmail.com">anuj1230567@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/anuj230977" target="_blank">anuj230977</a></p>
-    <p>GitHub: <a href="https://github.com/Anuj230977" target="_blank">@Anuj230977</a></p>
-  </section>
-  <footer>
+  <main>
+    <section id="home" class="hero fade-in-up">
+      <h2>Hello, I'm <span class="highlight">Anuj Jadhav</span></h2>
+      <p>Welcome to my portfolio! I build modern web apps, creative bots, and enjoy solving real-world problems with code.</p>
+    </section>
+
+    <section id="about" class="fade-in-up">
+      <h2>About Me</h2>
+      <p>Developer focused on Python, JavaScript, and cloud-enabled apps. I love automation, learning, and building products that help others.</p>
+      <ul>
+        <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
+        <li><strong>Tech:</strong> React, Node.js, MongoDB, Flask</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="fade-in-up">
+      <h2>Featured Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <strong>QR Code Generator</strong> — Python app to generate QR codes.
+          <a href="https://github.com/Anuj230977/qr-code-generator" class="project-link" target="_blank">Repo</a>
+        </li>
+        <li>
+          <strong>Campus Placement Portal</strong> — Full stack platform for campus recruitment.
+          <a href="https://github.com/Anuj230977/campus-placement-portal" class="project-link" target="_blank">Repo</a>
+        </li>
+        <li>
+          <strong>Telegram Bots</strong> — Custom Telegram bots hosted on Replit/Render.
+          <a href="https://github.com/Anuj230977/telegram-bot-replit" class="project-link" target="_blank">Repo</a>
+        </li>
+        <li>
+          <strong>MediBridge</strong> — Appointment booking web app with SMS notifications.
+          <a href="https://github.com/Anuj230977/medibridge" class="project-link" target="_blank">Repo</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="fade-in-up">
+      <h2>Contact Me</h2>
+      <div class="contact-links">
+        <a href="mailto:anuj1230567@gmail.com" class="contact-btn">Email</a>
+        <a href="https://www.linkedin.com/in/anujjadhav" class="contact-btn" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Anuj230977" class="contact-btn" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
+  <footer class="fade-in">
     <p>&copy; 2026 Anuj Jadhav | All rights reserved.</p>
   </footer>
+  <script>
+    // Animation for fade in on scroll
+    const faders = document.querySelectorAll('.fade-in, .fade-in-up');
+    const appearOptions = { threshold: 0.18, rootMargin: '0px 0px -40px 0px' };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
 </body>
 </html>
