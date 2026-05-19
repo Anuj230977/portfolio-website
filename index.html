@@ -1,14 +1,60 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anuj Jadhav | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
 <body>
-<script type="text/javascript"> 
-function displayformvalue(){
-let name=document.myform.txt1.value; 
-alert("Dear students Welcome: "+name);
-}
-</script>
-<form name="myform">
-Enter your Name:<input type="text" name="txt1"/>
-<input type="button" onclick="displayformvalue()" value="Display name"/>
-</form>
+  <header>
+    <h1>Anuj Jadhav</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <h2>Welcome to My Portfolio!</h2>
+    <p>Hi, I'm Anuj Jadhav, a passionate developer skilled in Python, Web development, and Bot creation.</p>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a developer with practical experience building web apps, automation scripts, and bots. I enjoy learning new technologies and solving real-world problems through code.</p>
+    <ul>
+      <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
+      <li><strong>Technologies:</strong> React, Node.js, MongoDB, Flask</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul class="projects-list">
+      <li>
+        <strong>QR Code Generator</strong> — Python app to generate QR codes. <a href="https://github.com/Anuj230977/qr-code-generator" target="_blank">Repo</a>
+      </li>
+      <li>
+        <strong>Campus Placement Portal</strong> — Full stack platform for campus recruitment. <a href="https://github.com/Anuj230977/campus-placement-portal" target="_blank">Repo</a>
+      </li>
+      <li>
+        <strong>Telegram Bots</strong> — Custom Telegram bots hosted on Replit/Render. <a href="https://github.com/Anuj230977/telegram-bot-replit" target="_blank">Repo</a>
+      </li>
+      <li>
+        <strong>MediBridge</strong> — Appointment booking web app with SMS notifications. <a href="https://github.com/Anuj230977/medibridge" target="_blank">Repo</a>
+      </li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:anuj1230567@gmail.com">anuj1230567@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/anuj230977" target="_blank">anuj230977</a></p>
+    <p>GitHub: <a href="https://github.com/Anuj230977" target="_blank">@Anuj230977</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2026 Anuj Jadhav | All rights reserved.</p>
+  </footer>
 </body>
 </html>
