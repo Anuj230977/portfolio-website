@@ -40,7 +40,7 @@ Feel free to edit `index.html` and `style.css` to personalize your skills, proje
 ## 📧 Contact
 
 - Email: [anuj1230567@gmail.com](mailto:anuj1230567@gmail.com)
-- LinkedIn: [anuj230977](https://linkedin.com/in/anuj230977)
+- LinkedIn: [anujjadhav](www.linkedin.com/in/anujjadhav)
 - GitHub: [Anuj230977](https://github.com/Anuj230977)
 
 ## 📝 License
