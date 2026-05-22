@@ -3,82 +3,256 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anuj Jadhav | Portfolio</title>
+  <title>Anuj Jadhav | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+  <!-- Animated background grid -->
+  <div class="bg-grid"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
   <header>
-    <h1 class="fade-in">Anuj Jadhav</h1>
+    <div class="logo">AJ<span class="dot">.</span></div>
     <nav>
       <ul>
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section id="home" class="hero fade-in-up">
-      <h2>Hello, I'm <span class="highlight">Anuj Jadhav</span></h2>
-      <p>Welcome to my portfolio! I build modern web apps, creative bots, and enjoy solving real-world problems with code.</p>
-    </section>
 
-    <section id="about" class="fade-in-up">
-      <h2>About Me</h2>
-      <p>Developer focused on Python, JavaScript, and cloud-enabled apps. I love automation, learning, and building products that help others.</p>
-      <ul>
-        <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
-        <li><strong>Tech:</strong> React, Node.js, MongoDB, Flask</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="fade-in-up">
-      <h2>Featured Projects</h2>
-      <ul class="projects-list">
-        <li>
-          <strong>QR Code Generator</strong> — Python app to generate QR codes.
-          <a href="https://github.com/Anuj230977/qr-code-generator" class="project-link" target="_blank">Repo</a>
-        </li>
-        <li>
-          <strong>Campus Placement Portal</strong> — Full stack platform for campus recruitment.
-          <a href="https://github.com/Anuj230977/campus-placement-portal" class="project-link" target="_blank">Repo</a>
-        </li>
-        <li>
-          <strong>Telegram Bots</strong> — Custom Telegram bots hosted on Replit/Render.
-          <a href="https://github.com/Anuj230977/telegram-bot-replit" class="project-link" target="_blank">Repo</a>
-        </li>
-        <li>
-          <strong>MediBridge</strong> — Appointment booking web app with SMS notifications.
-          <a href="https://github.com/Anuj230977/medibridge" class="project-link" target="_blank">Repo</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact" class="fade-in-up">
-      <h2>Contact Me</h2>
-      <div class="contact-links">
-        <a href="mailto:anuj1230567@gmail.com" class="contact-btn">Email</a>
-        <a href="https://www.linkedin.com/in/anujjadhav" class="contact-btn" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Anuj230977" class="contact-btn" target="_blank">GitHub</a>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-tag reveal">👋 Hello, World!</div>
+        <h1 class="hero-title reveal">
+          I'm <span class="highlight">Anuj Jadhav</span>
+        </h1>
+        <div class="typewriter-wrap reveal">
+          <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc reveal">
+          Developer from Pune, India — building real-world tools with Python, Java, and AI.
+          Passionate about automation, full-stack apps, and solving problems with code.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="code-block">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">anuj.py</span>
+          </div>
+          <pre class="code-body"><span class="c-keyword">class</span> <span class="c-name">Anuj</span>:
+  name <span class="c-op">=</span> <span class="c-str">"Anuj Jadhav"</span>
+  location <span class="c-op">=</span> <span class="c-str">"Pune, India"</span>
+  languages <span class="c-op">=</span> [
+    <span class="c-str">"Python"</span>, <span class="c-str">"Java"</span>,
+    <span class="c-str">"JavaScript"</span>
+  ]
+  <span class="c-keyword">def</span> <span class="c-fn">passion</span>(self):
+    <span class="c-keyword">return</span> <span class="c-str">"Building real things"</span></pre>
+        </div>
       </div>
     </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about reveal-section">
+      <div class="section-label">// about me</div>
+      <h2 class="section-title">Who Am I?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a developer based in <strong>Pune, India</strong>, with a strong focus on building practical tools and applications that solve real problems.</p>
+          <p>I actively use <strong>AI tools like Claude and Google AI Studio</strong> to build faster and smarter. From Python automation scripts to full-stack web apps to Java desktop applications — I love the entire spectrum of development.</p>
+          <p>Always learning, always building something new.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">11+</span>
+            <span class="stat-label">GitHub Repos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tech Stacks</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills reveal-section">
+      <div class="section-label">// skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Flask</span>
+            <span class="tag">TailwindCSS</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">TextBlob / NLTK</span>
+            <span class="tag">Java Swing</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">JDBC</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">NetBeans</span>
+            <span class="tag">Azure</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>AI Tools</h3>
+          <div class="skill-tags">
+            <span class="tag accent">Claude (Anthropic)</span>
+            <span class="tag accent">Google AI Studio</span>
+            <span class="tag accent">PyInstaller</span>
+            <span class="tag accent">ElevenLabs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects reveal-section">
+      <div class="section-label">// projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-tag">Python • NLP</div>
+          <h3>Sentiment Analyzer</h3>
+          <p>Desktop tool that analyzes customer reviews as Positive, Negative, or Neutral using NLP. Supports bulk CSV/Excel analysis with auto-generated pie chart reports.</p>
+          <div class="project-tech"><span>TextBlob</span><span>Pandas</span><span>Tkinter</span><span>Matplotlib</span></div>
+          <a href="https://github.com/Anuj230977/Sentiment-Analyzer" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-tag">Java • MySQL</div>
+          <h3>Student Result System</h3>
+          <p>Professional desktop app for schools — MVC architecture, login screen, stats dashboard, grade calculator, bulk CSV import/export, and result report generation.</p>
+          <div class="project-tech"><span>Java Swing</span><span>JDBC</span><span>MySQL</span><span>FlatLaf</span></div>
+          <a href="https://github.com/Anuj230977/Student-Result-System" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-tag">Python • Automation</div>
+          <h3>CSV & Excel Smart Cleaner</h3>
+          <p>Cleans messy CSV/Excel files, removes duplicates and empty rows, standardizes data, and generates a visual PNG report. Includes a one-click .exe for non-technical users.</p>
+          <div class="project-tech"><span>Pandas</span><span>Matplotlib</span><span>Tkinter</span><span>PyInstaller</span></div>
+          <a href="https://github.com/Anuj230977/csv-cleaner-tool" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">TypeScript • React</div>
+          <h3>SwiftLink</h3>
+          <p>URL shortener with real-time analytics — tracks browsers, OS, devices, and referrers on every click.</p>
+          <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>TypeScript</span></div>
+          <a href="https://github.com/Anuj230977/SwiftLink" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">React • Node.js</div>
+          <h3>Campus Placement Portal</h3>
+          <p>Full stack portal for students and recruiters — job listings, applications, and placement tracking.</p>
+          <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>TailwindCSS</span></div>
+          <a href="https://github.com/Anuj230977/campus-placement-portal" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Python • Telegram</div>
+          <h3>Telegram Bots</h3>
+          <p>Custom Telegram bots built with Python and hosted on both Render and Replit for 24/7 uptime.</p>
+          <div class="project-tech"><span>Python</span><span>Telegram API</span><span>Render</span><span>Replit</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Anuj230977/telegram-bot-render" class="project-link" target="_blank">Render →</a>
+            <a href="https://github.com/Anuj230977/telegram-bot-replit" class="project-link" target="_blank">Replit →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">HTML • JavaScript</div>
+          <h3>MediBridge</h3>
+          <p>Web platform for patients to book medical appointments and track appointment status.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://github.com/Anuj230977/medibridge" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Python • Flask</div>
+          <h3>Python Website on Azure</h3>
+          <p>Flask web application deployed on Microsoft Azure cloud infrastructure.</p>
+          <div class="project-tech"><span>Python</span><span>Flask</span><span>Azure</span></div>
+          <a href="https://github.com/Anuj230977/pythonwebsite" class="project-link" target="_blank">View Repo →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal-section">
+      <div class="section-label">// contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-desc">Have a project in mind or just want to say hi? I'm always open to new opportunities and collaborations.</p>
+      <div class="contact-links">
+        <a href="mailto:anuj1230567@gmail.com" class="contact-btn">
+          <span class="contact-icon">✉</span> Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/anujjadhav" class="contact-btn" target="_blank">
+          <span class="contact-icon">in</span> LinkedIn
+        </a>
+        <a href="https://github.com/Anuj230977" class="contact-btn" target="_blank">
+          <span class="contact-icon">⌥</span> GitHub
+        </a>
+      </div>
+    </section>
+
   </main>
-  <footer class="fade-in">
-    <p>&copy; 2026 Anuj Jadhav | All rights reserved.</p>
+
+  <footer>
+    <p>Built by <span class="highlight">Anuj Jadhav</span> &nbsp;•&nbsp; Pune, India &nbsp;•&nbsp; &copy; 2026</p>
   </footer>
-  <script>
-    // Animation for fade in on scroll
-    const faders = document.querySelectorAll('.fade-in, .fade-in-up');
-    const appearOptions = { threshold: 0.18, rootMargin: '0px 0px -40px 0px' };
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-    faders.forEach(fader => appearOnScroll.observe(fader));
-  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
