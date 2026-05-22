@@ -90,6 +90,12 @@ nav ul {
   letter-spacing: 0.05em;
 }
 
+.nav-link.active {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
+  font-weight: 700;
+}
+
 .nav-link:hover { color: var(--primary); }
 
 /* ── MAIN ── */
@@ -378,7 +384,8 @@ section {
 
 .project-card:hover {
   border-color: var(--primary);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px -10px rgba(0, 245, 212, 0.2);
 }
 
 .project-card.featured {
