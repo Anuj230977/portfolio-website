@@ -2,9 +2,9 @@
 const textElement = document.getElementById('typewriter-text');
 const phrases = [
     "Full Stack Developer",
-    "Python Automation Expert",
-    "Data Analytics Enthusiast",
-    "MERN Stack Engineer"
+    "Python Automation Developer",
+    "Data Analytics Developer",
+    "MERN Stack Developer"
 ];
 let phraseIndex = 0;
 let charIndex = 0;
