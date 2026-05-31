@@ -1,258 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anuj Jadhav | Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Subodh Jadhav | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Animated background grid -->
-  <div class="bg-grid"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <header>
-    <div class="logo">AJ<span class="dot">.</span></div>
-    <nav>
-      <ul>
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AJ<span>{</span></strong></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar,"></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main>
-
-    <!-- HERO -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-content">
-        <div class="hero-tag reveal">👋 Hello, World!</div>
-        <h1 class="hero-title reveal">
-          I'm <span class="highlight">Anuj Jadhav</span>
-        </h1>
-        <div class="typewriter-wrap reveal">
-          <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="AJ Logo" class="main-logo">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Anuj Subodh Jadhav</span></h1>
+            <p class="typewriter">I am a <span id="typewriter-text"></span></p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="https://github.com/Anuj230977" target="_blank" class="btn-secondary">GitHub Profile</a>
+            </div>
         </div>
-        <p class="hero-desc reveal">
-          Developer from Pune, India — building real-world tools with Python, Java, and AI.
-          Passionate about automation, full-stack apps, and solving problems with code.
-        </p>
-        <div class="hero-btns reveal">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-outline">Contact Me</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="code-block">
-          <div class="code-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="code-title">anuj.py</span>
-          </div>
-          <pre class="code-body"><span class="c-keyword">class</span> <span class="c-name">Anuj</span>:
-  name <span class="c-op">=</span> <span class="c-str">"Anuj Jadhav"</span>
-  location <span class="c-op">=</span> <span class="c-str">"Pune, India"</span>
-  languages <span class="c-op">=</span> [
-    <span class="c-str">"Python"</span>, <span class="c-str">"Java"</span>,
-    <span class="c-str">"JavaScript"</span>
-  ]
-  <span class="c-keyword">def</span> <span class="c-fn">passion</span>(self):
-    <span class="c-keyword">return</span> <span class="c-str">"Building real things"</span></pre>
-        </div>
-      </div>
+        <div class="hero-bg-glow"></div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about reveal-section">
-      <div class="section-label">// about me</div>
-      <h2 class="section-title">Who Am I?</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I'm a developer based in <strong>Pune, India</strong>, with a strong focus on building practical tools and applications that solve real problems.</p>
-          <p>I actively use <strong>AI tools like Claude and Google AI Studio</strong> to build faster and smarter. From Python automation scripts to full-stack web apps to Java desktop applications — I love the entire spectrum of development.</p>
-          <p>Always learning, always building something new.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I am a <strong>Full Stack Developer</strong> and <strong>BBA-CA Graduate</strong> based in Pune, India. I specialize in bridging the gap between complex data and functional user interfaces.</p>
+                <p>With a strong technical foundation in the <strong>MERN Stack, Python, and Java</strong>, I focus on building tools that solve real-world problems—from automating data cleaning for thousands of records to architecting secure healthcare systems.</p>
+                <p>I view AI as a force multiplier in my workflow, utilizing tools like Claude and Gemini Pro to accelerate prototyping and ensure high-quality, maintainable code.</p>
+            </div>
         </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-num">11+</span>
-            <span class="stat-label">GitHub Repos</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">3</span>
-            <span class="stat-label">Languages</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">5+</span>
-            <span class="stat-label">Tech Stacks</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">∞</span>
-            <span class="stat-label">Curiosity</span>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills reveal-section">
-      <div class="section-label">// skills</div>
-      <h2 class="section-title">Tech Stack</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Java</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            
+            <!-- Project 1: CSV Cleaner -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/csv-cleaner-tool/csv_cleaner.png" alt="CSV Cleaner">
+                </div>
+                <div class="project-info">
+                    <h3>CSV & Excel Smart Cleaner</h3>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Tkinter</span>
+                    </div>
+                    <p>Developed a data normalization tool reducing manual cleaning time by 90%. Automates date standardization and generates visual health reports for 500k+ rows.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anuj230977/csv-cleaner-tool" target="_blank" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Sentiment Analyzer -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/Sentiment-Analyzer/chart.png" alt="Sentiment Analyzer">
+                </div>
+                <div class="project-info">
+                    <h3>Sentiment Analyzer Pro</h3>
+                    <div class="tech-stack">
+                        <span>Python</span><span>NLP/VADER</span><span>Pandas</span><span>Threading</span>
+                    </div>
+                    <p>Engineered an NLP utility that processes 568,000+ Amazon reviews with zero GUI lag using background threading, achieving high accuracy in sentiment polarity.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anuj230977/Sentiment-Analyzer" target="_blank" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Campus Portal -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/campus-placement-portal/dashboard.png" alt="Placement Portal">
+                </div>
+                <div class="project-info">
+                    <h3>Campus Placement Portal</h3>
+                    <div class="tech-stack">
+                        <span>React</span><span>Node.js</span><span>MongoDB</span><span>Tailwind</span>
+                    </div>
+                    <p>Architected a full-stack portal for student-recruiter workflows, implementing RBAC and strict schema validation to eliminate record duplication by 98%.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anuj230977/campus-placement-portal" target="_blank" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Result System -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/Student-Result-System/main.png" alt="Result System">
+                </div>
+                <div class="project-info">
+                    <h3>Student Result System</h3>
+                    <div class="tech-stack">
+                        <span>Java</span><span>MySQL</span><span>JDBC</span><span>MVC</span>
+                    </div>
+                    <p>Developed a robust Java desktop application for automating grade calculations for 500+ students, reducing record update time by 80%.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anuj230977/Student-Result-System" target="_blank" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Medibridge -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/medibridge/home.png" alt="Medibridge">
+                </div>
+                <div class="project-info">
+                    <h3>Medibridge Healthcare</h3>
+                    <div class="tech-stack">
+                        <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Bcrypt</span>
+                    </div>
+                    <p>Constructed a secure patient management system with encrypted user credentials and high-precision authorization flows for staff and patients.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anuj230977/medibridge" target="_blank" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: SwiftLink -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/SwiftLink/analytics.png" alt="SwiftLink">
+                </div>
+                <div class="project-info">
+                    <h3>SwiftLink Analytics</h3>
+                    <div class="tech-stack">
+                        <span>Node.js</span><span>MongoDB</span><span>Analytics</span>
+                    </div>
+                    <p>High-performance URL shortening service featuring a real-time tracking dashboard for OS, Browser, and Device analytics.</p>
+                    <div class="project-links">
+                        <a href="https://swiftlink-2z2h.onrender.com/" target="_blank" class="link-btn live">Live Demo</a>
+                        <a href="https://github.com/Anuj230977/SwiftLink" target="_blank" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="skill-group">
-          <h3>Frameworks & Libraries</h3>
-          <div class="skill-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Flask</span>
-            <span class="tag">TailwindCSS</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">TextBlob / NLTK</span>
-            <span class="tag">Java Swing</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Databases & Tools</h3>
-          <div class="skill-tags">
-            <span class="tag">MySQL</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">JDBC</span>
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">NetBeans</span>
-            <span class="tag">Azure</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>AI Tools</h3>
-          <div class="skill-tags">
-            <span class="tag accent">Claude (Anthropic)</span>
-            <span class="tag accent">Google AI Studio</span>
-            <span class="tag accent">PyInstaller</span>
-            <span class="tag accent">ElevenLabs</span>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects reveal-section">
-      <div class="section-label">// projects</div>
-      <h2 class="section-title">Featured Work</h2>
-      <div class="projects-grid">
-
-        <div class="project-card featured">
-          <div class="project-tag">Python • NLP</div>
-          <h3>Sentiment Analyzer</h3>
-          <p>Desktop tool that analyzes customer reviews as Positive, Negative, or Neutral using NLP. Supports bulk CSV/Excel analysis with auto-generated pie chart reports.</p>
-          <div class="project-tech"><span>TextBlob</span><span>Pandas</span><span>Tkinter</span><span>Matplotlib</span></div>
-          <a href="https://github.com/Anuj230977/Sentiment-Analyzer" class="project-link" target="_blank">View Repo →</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-list">
+                    <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                <div class="skill-list">
+                    <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Pandas</span><span>Flask</span><span>MVC</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa,tools"></i> Tools & AI</h3>
+                <div class="skill-list">
+                    <span>Git</span><span>GitHub</span><span>Docker</span><span>Azure</span><span>Postman</span><span>Claude AI</span><span>Gemini Pro</span>
+                </div>
+            </div>
         </div>
-
-        <div class="project-card featured">
-          <div class="project-tag">Java • MySQL</div>
-          <h3>Student Result System</h3>
-          <p>Professional desktop app for schools — MVC architecture, login screen, stats dashboard, grade calculator, bulk CSV import/export, and result report generation.</p>
-          <div class="project-tech"><span>Java Swing</span><span>JDBC</span><span>MySQL</span><span>FlatLaf</span></div>
-          <a href="https://github.com/Anuj230977/Student-Result-System" class="project-link" target="_blank">View Repo →</a>
-        </div>
-
-        <div class="project-card featured">
-          <div class="project-tag">Python • Automation</div>
-          <h3>CSV & Excel Smart Cleaner</h3>
-          <p>Cleans messy CSV/Excel files, removes duplicates and empty rows, standardizes data, and generates a visual PNG report. Includes a one-click .exe for non-technical users.</p>
-          <div class="project-tech"><span>Pandas</span><span>Matplotlib</span><span>Tkinter</span><span>PyInstaller</span></div>
-          <a href="https://github.com/Anuj230977/csv-cleaner-tool" class="project-link" target="_blank">View Repo →</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">TypeScript • React</div>
-          <h3>SwiftLink</h3>
-          <p>URL shortener with real-time analytics — tracks browsers, OS, devices, and referrers on every click.</p>
-          <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>TypeScript</span></div>
-          <a href="https://github.com/Anuj230977/SwiftLink" class="project-link" target="_blank">View Repo →</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">React • Node.js</div>
-          <h3>Campus Placement Portal</h3>
-          <p>Full stack portal for students and recruiters — job listings, applications, and placement tracking.</p>
-          <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>TailwindCSS</span></div>
-          <a href="https://github.com/Anuj230977/campus-placement-portal" class="project-link" target="_blank">View Repo →</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">Python • Telegram</div>
-          <h3>Telegram Bots</h3>
-          <p>Custom Telegram bots built with Python and hosted on both Render and Replit for 24/7 uptime.</p>
-          <div class="project-tech"><span>Python</span><span>Telegram API</span><span>Render</span><span>Replit</span></div>
-          <div class="project-links">
-            <a href="https://github.com/Anuj230977/telegram-bot-render" class="project-link" target="_blank">Render →</a>
-            <a href="https://github.com/Anuj230977/telegram-bot-replit" class="project-link" target="_blank">Replit →</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">HTML • JavaScript</div>
-          <h3>MediBridge</h3>
-          <p>Web platform for patients to book medical appointments and track appointment status.</p>
-          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a href="https://github.com/Anuj230977/medibridge" class="project-link" target="_blank">View Repo →</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">Python • Flask</div>
-          <h3>Python Website on Azure</h3>
-          <p>Flask web application deployed on Microsoft Azure cloud infrastructure.</p>
-          <div class="project-tech"><span>Python</span><span>Flask</span><span>Azure</span></div>
-          <a href="https://github.com/Anuj230977/pythonwebsite" class="project-link" target="_blank">View Repo →</a>
-        </div>
-
-      </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact reveal-section">
-      <div class="section-label">// contact</div>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="contact-desc">Have a project in mind or just want to say hi? I'm always open to new opportunities and collaborations.</p>
-      <div class="contact-links">
-        <a href="mailto:anuj1230567@gmail.com" class="contact-btn">
-          <span class="contact-icon">✉</span> Email Me
-        </a>
-        <a href="https://www.linkedin.com/in/anujjadhav" class="contact-btn" target="_blank">
-          <span class="contact-icon">in</span> LinkedIn
-        </a>
-        <a href="https://github.com/Anuj230977" class="contact-btn" target="_blank">
-          <span class="contact-icon">⌥</span> GitHub
-        </a>
-      </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-card">
+            <p>I am currently open to Full Stack, Backend, or Automation roles. Let's connect and build something great!</p>
+            <div class="contact-links">
+                <a href="mailto:anuj.jadhav1311@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/anujjadhav" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Anuj230977" target="_blank" class="contact-item"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
     </section>
 
-  </main>
+    <footer>
+        <p>&copy; 2026 Anuj Subodh Jadhav. Built with passion & AI.</p>
+    </footer>
 
-  <footer>
-    <p>Built by <span class="highlight">Anuj Jadhav</span> &nbsp;•&nbsp; Pune, India &nbsp;•&nbsp; &copy; 2026</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
