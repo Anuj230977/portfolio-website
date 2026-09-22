@@ -1,9 +1,9 @@
 // Typewriter Effect
 const textElement = document.getElementById('typewriter-text');
 const phrases = [
+    "Data Analytics Developer",
     "Full Stack Developer",
     "Python Automation Developer",
-    "Data Analytics Developer",
     "MERN Stack Developer"
 ];
 let phraseIndex = 0;
